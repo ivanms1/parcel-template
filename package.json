@@ -40,7 +40,7 @@
     "*.{json,md}": [
       "prettier --write"
     ],
-    "*.{js,jsx,ts,tsx,json,md}": [
+    "*.{js,jsx,ts,tsx,json}": [
       "prettier --write",
       "./node_modules/.bin/eslint --fix"
     ],
