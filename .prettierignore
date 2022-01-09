@@ -42,7 +42,4 @@ env-variables.json
 
 const/
 
-#db
-/conun-db
-
-/private
+*.hbs
