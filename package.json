@@ -21,7 +21,7 @@
     "eslint-plugin-react": "^7.30.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "parcel": "^2.5.0",
+    "parcel": "^2.6.2",
     "postcss": "^8.4.12",
     "prettier": "^2.7.1",
     "stylelint": "^14.8.3",
