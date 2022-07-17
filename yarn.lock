@@ -30,6 +30,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@csstools/selector-specificity@^2.0.1":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
+  integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"
@@ -1440,10 +1445,10 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-css-functions-list@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/css-functions-list/-/css-functions-list-3.0.1.tgz#1460df7fb584d1692c30b105151dbb988c8094f9"
-  integrity sha512-PriDuifDt4u4rkDgnqRCLnjfMatufLmWNfQnGCq34xZwpY3oabwhB9SqRBmuvWUgndbemCFlKqg+nO7C2q0SBw==
+css-functions-list@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/css-functions-list/-/css-functions-list-3.1.0.tgz#cf5b09f835ad91a00e5959bcfc627cd498e1321b"
+  integrity sha512-/9lCvYZaUbBGvYUgYGFJ4dcYiyqdhSjG7IPVluoV8A1ILjkF7ilmhp1OGUz8n+nmBcu0RNrQAzgD8B6FJbrt2w==
 
 css-parse@~2.0.0:
   version "2.0.0"
@@ -3428,7 +3433,7 @@ postcss@^6.0.14, postcss@^6.0.2:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^8.3.0, postcss@^8.3.11, postcss@^8.4.12, postcss@^8.4.13:
+postcss@^8.3.0, postcss@^8.3.11, postcss@^8.4.12, postcss@^8.4.14:
   version "8.4.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.14.tgz#ee9274d5622b4858c1007a74d76e42e56fd21caf"
   integrity sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==
@@ -3871,11 +3876,6 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.9.tgz#8a595135def9592bda69709474f1cbeea7c2467f"
   integrity sha512-Ki212dKK4ogX+xDo4CtOZBVIwhsKBEfsEEcwmJfLQzirgc2jIWdzg40Unxz/HzEUqM1WFzVlQSMF9kZZ2HboLQ==
 
-specificity@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/specificity/-/specificity-0.4.1.tgz#aab5e645012db08ba182e151165738d00887b019"
-  integrity sha512-1klA3Gi5PD1Wv9Q0wUoOQN1IWAuPu0D1U03ThXTr0cJ20+/iq2tHSDnK7Kk/0LXJ1ztUB2/1Os0wKmfyNgUQfg==
-
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
@@ -4030,15 +4030,16 @@ stylelint-prettier@^2.0.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-stylelint@^14.8.3:
-  version "14.8.3"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-14.8.3.tgz#25d2df1e010cda52ff56327059d1ce25319109be"
-  integrity sha512-aLpskXwSgFEBYbFRKA/BfuyYMGuXNtn2t5GqoffNPSezvw97x/vVNWcZNF0+cwt+LBjfvyq9/MRE3OjInGRgNA==
+stylelint@^14.9.1:
+  version "14.9.1"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-14.9.1.tgz#6494ed38f148b1e75b402d678a3b6a8aae86dfda"
+  integrity sha512-RdAkJdPiLqHawCSnu21nE27MjNXaVd4WcOHA4vK5GtIGjScfhNnaOuWR2wWdfKFAvcWQPOYe311iveiVKSmwsA==
   dependencies:
+    "@csstools/selector-specificity" "^2.0.1"
     balanced-match "^2.0.0"
     colord "^2.9.2"
     cosmiconfig "^7.0.1"
-    css-functions-list "^3.0.1"
+    css-functions-list "^3.1.0"
     debug "^4.3.4"
     execall "^2.0.0"
     fast-glob "^3.2.11"
@@ -4059,14 +4060,13 @@ stylelint@^14.8.3:
     micromatch "^4.0.5"
     normalize-path "^3.0.0"
     picocolors "^1.0.0"
-    postcss "^8.4.13"
+    postcss "^8.4.14"
     postcss-media-query-parser "^0.2.3"
     postcss-resolve-nested-selector "^0.1.1"
     postcss-safe-parser "^6.0.0"
     postcss-selector-parser "^6.0.10"
     postcss-value-parser "^4.2.0"
     resolve-from "^5.0.0"
-    specificity "^0.4.1"
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
     style-search "^0.1.0"
